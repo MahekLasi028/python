@@ -1,0 +1,5 @@
+print("Enter name")
+name=input()
+print("Enter age")
+age=int(input())
+print(f"Hello {name} your age will be {age+1} in next year")
