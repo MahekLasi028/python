@@ -4,7 +4,7 @@ def Print(no):
             print(i)
 
 def main():
-    
+
     no = int(input("Enter a number: "))
     Print(no)
 
