@@ -4,7 +4,7 @@ import os
 def CountEven(no):
     count = 0
 
-    for i in range(2, no + 1, 2):
+    for i in range(1, no + 1, 2):
         count = count + 1
 
     print("Process ID :", os.getpid())
