@@ -29,8 +29,11 @@ def main():
     p.close()
     p.join()
 
+    for i in range(len(data)):
+        print("Prime count between 1 and ",data[i]," = ",result[i])
+
 if __name__ =="__main__":
-    main
+    main()
 
 
         
