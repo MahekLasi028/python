@@ -55,7 +55,8 @@ def main():
     obj2.Factors()
     print("Sum of Factors :", obj2.SumFactors())
 
-
+if __name__=="__main__":
+     main()
 
 
 
