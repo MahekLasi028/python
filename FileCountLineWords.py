@@ -1,19 +1,22 @@
-def DisplayFile(filename):
+def CountWords(filename):
     file = open(filename,"r")
 
     count = 0
 
     for line in file:
-       print(line,end=" ")
-    
+        words = line.split()
+        count = count + len(words)
+
     file.close()
+    return count
 
 def main():
-    name = input("Enter file name:")
+    name = input("Enter file name : ")
 
-    print("-----DISPLAYING THE FILE CONTENTS------")
-    DisplayFile(name)
+    Ret = CountWords(name)
+
+    print("Total no words in file are : ",Ret)
+    CountWords(name)
 
 if __name__ == "__main__":
     main()
-    
